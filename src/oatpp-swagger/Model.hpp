@@ -578,7 +578,7 @@ public:
      */
     OAuthFlowBuilder& addScope(const String& name, const String& scope){
       //getScopes()->at(name) = scope;
-      m_scopes->operator[](name) = scope;
+      getScopes()->operator[](name) = scope;
       return *this;
     }
 
